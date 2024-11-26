@@ -1,0 +1,80 @@
+{
+    "default": {
+        "cold_call": {
+            "greeting": "Hi there! This is {{agent_name}} from {{company_name}}. How are you today?",
+            "pitch": "I noticed you might be interested in {{service_type}}. We've been helping businesses in {{location}} with {{value_proposition}}. Would you like to hear more about how we could help you?",
+            "value_props": [
+                "I understand you're busy, so I'll be brief.",
+                "We've helped similar businesses increase their {{metric}} by {{percentage}}%.",
+                "What sets us apart is our {{unique_feature}}."
+            ],
+            "objection_handling": {
+                "not_interested": "I completely understand. Would it be okay if I send you some information for future reference?",
+                "too_busy": "Of course, I respect your time. When would be a better time to have a quick chat?",
+                "too_expensive": "I understand budget concerns. We actually offer flexible plans that can work with different budgets.",
+                "already_have_provider": "That's great! I'd still love to share how we might complement your current setup."
+            },
+            "closing": {
+                "positive": "Excellent! Let's schedule a quick meeting to discuss the details. What works better for you, morning or afternoon?",
+                "neutral": "I'll send you some information about our services. Feel free to reach out if you have any questions.",
+                "negative": "Thank you for your time. Have a great rest of your day!"
+            },
+            "no_response": "I understand you're busy. I'll follow up with an email with more information. Have a great day!"
+        },
+        "follow_up_email": {
+            "subject": "Quick follow-up from our conversation - {{company_name}}",
+            "body": "Hi {{contact_name}},\n\nThank you for taking the time to speak with me earlier. As promised, I wanted to share more information about how {{company_name}} can help your business.\n\nWe specialize in {{service_description}} and have helped many businesses in {{location}} achieve {{benefit}}.\n\nYou can learn more about our services at {{website}} or give us a call at {{phone}}.\n\nWould you be interested in a quick 15-minute chat to discuss how we can help your business?\n\nBest regards,\n{{agent_name}}\n{{company_name}}"
+        }
+    },
+    "restaurant": {
+        "cold_call": {
+            "greeting": "Hi! This is {{agent_name}} from {{company_name}}. I hope I caught you at a good time?",
+            "pitch": "I work with restaurants in {{location}} to help them attract more customers and increase their online presence. I noticed your restaurant might benefit from our digital marketing services. Would you be interested in learning how we've helped other restaurants increase their bookings?",
+            "value_props": [
+                "We've helped restaurants increase their online orders by up to 40%",
+                "Our clients typically see a 25% boost in weekend reservations",
+                "We can help you stand out on food delivery platforms"
+            ],
+            "objection_handling": {
+                "not_interested": "I understand. Would you like to receive our restaurant marketing guide? It's free and full of actionable tips.",
+                "too_busy": "I know running a restaurant keeps you busy. When would be a better time to chat?",
+                "too_expensive": "We have flexible plans designed specifically for restaurants of all sizes.",
+                "already_have_provider": "That's great! We actually specialize in complementing existing marketing efforts."
+            }
+        }
+    },
+    "retail": {
+        "cold_call": {
+            "greeting": "Hello! This is {{agent_name}} with {{company_name}}. Is this a good time?",
+            "pitch": "I help retail stores in {{location}} increase their foot traffic and online sales. I noticed your store might benefit from our local marketing services. Would you like to hear how we've helped similar stores grow their customer base?",
+            "value_props": [
+                "We've helped stores increase their foot traffic by 30%",
+                "Our clients typically see a 35% increase in repeat customers",
+                "We can help you compete with online retailers"
+            ],
+            "objection_handling": {
+                "not_interested": "No problem! Would you like our free guide on retail marketing trends?",
+                "too_busy": "I understand retail is demanding. When would be a better time?",
+                "too_expensive": "We have plans designed specifically for small retail businesses.",
+                "already_have_provider": "Great! We actually specialize in complementing existing marketing efforts."
+            }
+        }
+    },
+    "service": {
+        "cold_call": {
+            "greeting": "Hi there! This is {{agent_name}} from {{company_name}}. How's your day going?",
+            "pitch": "I help service businesses in {{location}} get more clients through digital marketing. I noticed your business might benefit from our lead generation services. Would you like to hear how we've helped similar businesses grow?",
+            "value_props": [
+                "We've helped service businesses increase their leads by 50%",
+                "Our clients typically see a 40% increase in qualified inquiries",
+                "We can help you stand out in local search results"
+            ],
+            "objection_handling": {
+                "not_interested": "I understand. Would you like our free guide on service business marketing?",
+                "too_busy": "I know service businesses are demanding. When would be a better time?",
+                "too_expensive": "We have plans designed specifically for service businesses of all sizes.",
+                "already_have_provider": "That's great! We actually specialize in complementing existing marketing efforts."
+            }
+        }
+    }
+}

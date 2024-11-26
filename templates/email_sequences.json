@@ -1,0 +1,116 @@
+{
+    "welcome_sequence": {
+        "name": "Welcome Sequence",
+        "description": "Initial onboarding sequence for new contacts",
+        "steps": [
+            {
+                "delay_hours": 0,
+                "subject": {
+                    "variants": [
+                        "Welcome to Our Community, {{name}}!",
+                        "🎉 Excited to Have You Here, {{name}}!"
+                    ]
+                },
+                "content": {
+                    "variants": [
+                        "Hi {{name}},\n\nWelcome to our real estate community! We're excited to have you join us. Here's what you can expect:\n\n• Market insights and trends\n• Property investment tips\n• Exclusive listings\n\nStay tuned for valuable content coming your way!\n\nBest regards,\nYour Real Estate Team",
+                        "Hello {{name}}!\n\nThanks for joining our real estate family! 🏠\n\nWe're thrilled to share with you:\n\n✨ Market updates\n💡 Investment strategies\n🔑 Premium listings\n\nGet ready for an amazing journey!\n\nCheers,\nYour Real Estate Team"
+                    ]
+                }
+            },
+            {
+                "delay_hours": 48,
+                "subject": {
+                    "variants": [
+                        "Your First Property Investment Guide",
+                        "Essential Real Estate Investment Tips"
+                    ]
+                },
+                "content": {
+                    "variants": [
+                        "Hi {{name}},\n\nReady to start your real estate journey? We've prepared a comprehensive guide to help you make informed decisions.\n\nCheck out our top 5 investment strategies that have helped our clients succeed.\n\nLet us know if you have any questions!\n\nBest,\nYour Real Estate Team",
+                        "Hello {{name}},\n\nExcited to share our proven real estate investment strategies with you! 📈\n\nDiscover how our clients have built successful property portfolios using our expert guidance.\n\nReach out anytime for personalized advice!\n\nBest regards,\nYour Real Estate Team"
+                    ]
+                }
+            }
+        ]
+    },
+    "property_alert_sequence": {
+        "name": "Property Alert Sequence",
+        "description": "Sequence for new property matches",
+        "steps": [
+            {
+                "delay_hours": 0,
+                "subject": {
+                    "variants": [
+                        "New Property Match: {{property_type}} in {{location}}",
+                        "Just Listed: Perfect {{property_type}} for You in {{location}}"
+                    ]
+                },
+                "content": {
+                    "variants": [
+                        "Hi {{name}},\n\nWe found a property that matches your criteria:\n\n🏠 {{property_type}}\n📍 {{location}}\n💰 {{price}}\n\nKey features:\n{{features}}\n\nWould you like to schedule a viewing?\n\nBest regards,\nYour Real Estate Team",
+                        "Hello {{name}}!\n\nExciting news! We've found your dream property:\n\n✨ {{property_type}} in {{location}}\n💎 Priced at {{price}}\n\nHighlights:\n{{features}}\n\nLet's arrange a viewing at your convenience!\n\nBest,\nYour Real Estate Team"
+                    ]
+                }
+            }
+        ]
+    },
+    "market_update_sequence": {
+        "name": "Market Update Sequence",
+        "description": "Monthly market insights and trends",
+        "steps": [
+            {
+                "delay_hours": 0,
+                "subject": {
+                    "variants": [
+                        "{{month}} Real Estate Market Update",
+                        "Latest Trends: {{month}} Real Estate Report"
+                    ]
+                },
+                "content": {
+                    "variants": [
+                        "Hi {{name}},\n\nHere's your monthly real estate market update:\n\n📈 Market Trends\n{{market_trends}}\n\n🏘️ Neighborhood Spotlight\n{{neighborhood_spotlight}}\n\n💡 Investment Opportunities\n{{investment_opportunities}}\n\nLet's discuss how these trends affect your investment strategy!\n\nBest regards,\nYour Real Estate Team",
+                        "Hello {{name}}!\n\nYour {{month}} real estate insights are here! 🎯\n\n🌟 What's Trending\n{{market_trends}}\n\n🏠 Featured Area\n{{neighborhood_spotlight}}\n\n💰 Hot Opportunities\n{{investment_opportunities}}\n\nWant to explore these opportunities together?\n\nBest,\nYour Real Estate Team"
+                    ]
+                }
+            }
+        ]
+    },
+    "follow_up_sequence": {
+        "name": "Follow-up Sequence",
+        "description": "Follow-up sequence for property viewings",
+        "steps": [
+            {
+                "delay_hours": 24,
+                "subject": {
+                    "variants": [
+                        "Following Up: {{property_address}} Viewing",
+                        "Your Thoughts on {{property_address}}?"
+                    ]
+                },
+                "content": {
+                    "variants": [
+                        "Hi {{name}},\n\nThank you for viewing {{property_address}} yesterday. I'd love to hear your thoughts about the property.\n\nWhat aspects did you like most? Any concerns?\n\nI'm here to answer any questions you may have.\n\nBest regards,\nYour Real Estate Team",
+                        "Hello {{name}}!\n\nHope you enjoyed viewing {{property_address}}! 🏠\n\nWhat impressed you most about the property? Any questions?\n\nI'm here to help you make the best decision for your needs.\n\nBest,\nYour Real Estate Team"
+                    ]
+                }
+            },
+            {
+                "delay_hours": 72,
+                "subject": {
+                    "variants": [
+                        "Next Steps for {{property_address}}",
+                        "Exclusive Offer: {{property_address}}"
+                    ]
+                },
+                "content": {
+                    "variants": [
+                        "Hi {{name}},\n\nJust wanted to follow up about {{property_address}}. If you're interested, we can:\n\n1. Schedule a second viewing\n2. Discuss the pricing\n3. Review similar properties\n\nWhat works best for you?\n\nBest regards,\nYour Real Estate Team",
+                        "Hello {{name}},\n\nStill thinking about {{property_address}}? 🤔\n\nWe can:\n\n🏠 Arrange another viewing\n💰 Negotiate the price\n🔍 Look at similar options\n\nWhat's your preference?\n\nBest,\nYour Real Estate Team"
+                    ]
+                }
+            }
+        ]
+    }
+}

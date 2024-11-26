@@ -1,0 +1,153 @@
+{
+    "dashboard_settings": {
+        "refresh_interval": "5m",
+        "data_retention": "365d",
+        "alert_channels": ["email", "slack", "asana"]
+    },
+    "metrics": [
+        {
+            "name": "conversion_rate",
+            "type": "conversion",
+            "source": "website_analytics",
+            "refresh_rate": "1h",
+            "threshold_warning": 2.5,
+            "threshold_critical": 1.0,
+            "industry_benchmark": 3.2
+        },
+        {
+            "name": "engagement_rate",
+            "type": "engagement",
+            "source": "social_media",
+            "refresh_rate": "1h",
+            "threshold_warning": 4.0,
+            "threshold_critical": 2.0,
+            "industry_benchmark": 4.8
+        },
+        {
+            "name": "revenue_per_customer",
+            "type": "revenue",
+            "source": "crm",
+            "refresh_rate": "1d",
+            "threshold_warning": 2000,
+            "threshold_critical": 1500,
+            "industry_benchmark": 2500
+        },
+        {
+            "name": "social_reach",
+            "type": "social",
+            "source": "social_media_api",
+            "refresh_rate": "6h",
+            "threshold_warning": 5000,
+            "threshold_critical": 2000,
+            "industry_benchmark": 7500
+        },
+        {
+            "name": "local_ranking",
+            "type": "local",
+            "source": "google_business",
+            "refresh_rate": "12h",
+            "threshold_warning": 3.5,
+            "threshold_critical": 2.5,
+            "industry_benchmark": 4.0
+        }
+    ],
+    "visualization_settings": {
+        "theme": "luxury",
+        "color_scheme": {
+            "primary": "#1f77b4",
+            "secondary": "#2ca02c",
+            "warning": "#ff7f0e",
+            "critical": "#d62728",
+            "benchmark": "#7f7f7f"
+        },
+        "default_time_ranges": ["24h", "7d", "30d", "90d", "1y"],
+        "chart_types": {
+            "time_series": "line",
+            "comparison": "bar",
+            "distribution": "area",
+            "relationship": "scatter"
+        }
+    },
+    "alert_rules": {
+        "threshold_breach": {
+            "consecutive_periods": 3,
+            "notification_cooldown": "1h"
+        },
+        "trend_detection": {
+            "min_periods": 5,
+            "significance_threshold": 0.1
+        },
+        "anomaly_detection": {
+            "sensitivity": 0.8,
+            "training_periods": 30
+        }
+    },
+    "integrations": {
+        "google_analytics": {
+            "enabled": true,
+            "metrics": ["pageviews", "sessions", "bounce_rate"]
+        },
+        "social_media": {
+            "platforms": ["instagram", "facebook", "linkedin"],
+            "metrics": ["followers", "engagement", "reach"]
+        },
+        "crm": {
+            "platform": "hubspot",
+            "metrics": ["deals", "pipeline_value", "conversion_rate"]
+        },
+        "email_marketing": {
+            "platform": "mailchimp",
+            "metrics": ["open_rate", "click_rate", "conversion_rate"]
+        }
+    },
+    "reporting": {
+        "scheduled_reports": [
+            {
+                "name": "Daily Performance",
+                "frequency": "daily",
+                "time": "06:00",
+                "metrics": ["conversion_rate", "revenue_per_customer"],
+                "format": "pdf"
+            },
+            {
+                "name": "Weekly Analysis",
+                "frequency": "weekly",
+                "day": "monday",
+                "time": "09:00",
+                "metrics": ["all"],
+                "format": "pdf",
+                "include_recommendations": true
+            },
+            {
+                "name": "Monthly Strategy",
+                "frequency": "monthly",
+                "day": 1,
+                "time": "10:00",
+                "metrics": ["all"],
+                "format": "pdf",
+                "include_recommendations": true,
+                "include_competitor_analysis": true
+            }
+        ],
+        "custom_dashboards": [
+            {
+                "name": "Executive Summary",
+                "metrics": ["conversion_rate", "revenue_per_customer", "social_reach"],
+                "layout": "grid",
+                "refresh_rate": "15m"
+            },
+            {
+                "name": "Marketing Performance",
+                "metrics": ["engagement_rate", "social_reach", "local_ranking"],
+                "layout": "vertical",
+                "refresh_rate": "1h"
+            },
+            {
+                "name": "Sales Pipeline",
+                "metrics": ["conversion_rate", "revenue_per_customer"],
+                "layout": "horizontal",
+                "refresh_rate": "30m"
+            }
+        ]
+    }
+}

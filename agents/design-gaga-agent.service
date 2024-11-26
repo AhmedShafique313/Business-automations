@@ -1,0 +1,23 @@
+[Unit]
+Description=Design Gaga Social Media Agent Orchestrator
+After=network.target
+
+[Service]
+Type=simple
+User=vandan
+WorkingDirectory=/mnt/VANDAN_DISK/code_stuff/projects/experiments/agents
+Environment=WORK_DIR=/mnt/VANDAN_DISK/code_stuff/projects/experiments/agents/work
+Environment=PYTHONPATH=/mnt/VANDAN_DISK/code_stuff/projects/experiments/agents
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 /mnt/VANDAN_DISK/code_stuff/projects/experiments/agents/agent_orchestrator.py
+Restart=always
+RestartSec=10
+
+# Security measures
+NoNewPrivileges=yes
+ProtectSystem=full
+ProtectHome=read-only
+PrivateTmp=yes
+
+[Install]
+WantedBy=multi-user.target

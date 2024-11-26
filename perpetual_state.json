@@ -1,0 +1,28 @@
+{
+  "total_leads": 0,
+  "last_run": null,
+  "successful_runs": 0,
+  "failed_runs": 0,
+  "industries_performance": {
+    "tech": {
+      "leads": 0,
+      "success_rate": 0
+    },
+    "finance": {
+      "leads": 0,
+      "success_rate": 0
+    },
+    "healthcare": {
+      "leads": 0,
+      "success_rate": 0
+    },
+    "education": {
+      "leads": 0,
+      "success_rate": 0
+    },
+    "ecommerce": {
+      "leads": 0,
+      "success_rate": 0
+    }
+  }
+}

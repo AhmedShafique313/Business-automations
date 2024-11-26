@@ -1,0 +1,49 @@
+{
+    "case_studies": {
+        "data_path": "data/case_studies",
+        "min_success_threshold": 0.75,
+        "metrics": {
+            "content": ["post_length", "image_count", "video_count", "hashtag_count"],
+            "timing": ["hour", "day_of_week"],
+            "engagement": ["likes_ratio", "comments_ratio", "shares_ratio", "saves_ratio"],
+            "audience": ["age_group", "gender", "location", "interests"],
+            "conversion": ["awareness_rate", "consideration_rate", "action_rate", "retention_rate"]
+        }
+    },
+    "performance": {
+        "thresholds": {
+            "content_quality": {
+                "excellent": 0.8,
+                "good": 0.6,
+                "needs_improvement": 0.4
+            },
+            "engagement_rate": {
+                "excellent": 0.05,
+                "good": 0.03,
+                "needs_improvement": 0.01
+            },
+            "conversion_rate": {
+                "excellent": 0.1,
+                "good": 0.05,
+                "needs_improvement": 0.02
+            }
+        },
+        "monitoring": {
+            "daily_collection_time": "00:00",
+            "weekly_report_time": "09:00",
+            "weekly_report_day": "MON"
+        }
+    },
+    "email": {
+        "sender": "reports@designgaga.ca",
+        "smtp_server": "smtp.gmail.com",
+        "smtp_port": 587,
+        "username": "reports@designgaga.ca",
+        "password": "YOUR_APP_SPECIFIC_PASSWORD"
+    },
+    "logging": {
+        "level": "INFO",
+        "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        "file": "logs/intelligence.log"
+    }
+}

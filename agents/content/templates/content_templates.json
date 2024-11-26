@@ -1,0 +1,325 @@
+{
+  "blog_post": {
+    "id": "template_blog_post_v1",
+    "type": "blog_post",
+    "structure": {
+      "title": {
+        "type": "string",
+        "maxLength": 100
+      },
+      "summary": {
+        "type": "string",
+        "maxLength": 200
+      },
+      "sections": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "heading": {
+              "type": "string"
+            },
+            "content": {
+              "type": "string"
+            }
+          },
+          "required": ["heading", "content"]
+        },
+        "minItems": 3
+      },
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "minItems": 1
+      },
+      "seo": {
+        "type": "object",
+        "properties": {
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "meta_description": {
+            "type": "string"
+          }
+        },
+        "required": ["keywords", "meta_description"]
+      }
+    },
+    "required": ["title", "summary", "sections", "tags", "seo"]
+  },
+  "social_post": {
+    "id": "template_social_post_v1",
+    "type": "social_post",
+    "structure": {
+      "platform": {
+        "type": "string",
+        "enum": ["twitter", "linkedin", "facebook", "instagram"]
+      },
+      "content": {
+        "type": "string"
+      },
+      "media": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            },
+            "alt_text": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "hashtags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "required": ["platform", "content"]
+  },
+  "email_campaign": {
+    "id": "template_email_campaign_v1",
+    "type": "email_campaign",
+    "structure": {
+      "subject": {
+        "type": "string",
+        "maxLength": 100
+      },
+      "preview_text": {
+        "type": "string",
+        "maxLength": 150
+      },
+      "sections": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["header", "text", "image", "button", "footer"]
+            },
+            "content": {
+              "type": "string"
+            }
+          },
+          "required": ["type", "content"]
+        }
+      },
+      "personalization": {
+        "type": "object",
+        "properties": {
+          "merge_fields": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "dynamic_content": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "required": ["subject", "preview_text", "sections", "personalization"]
+  },
+  "video_script": {
+    "id": "template_video_script_v1",
+    "type": "video_script",
+    "structure": {
+      "title": {
+        "type": "string",
+        "maxLength": 100
+      },
+      "target_duration": {
+        "type": "integer",
+        "minimum": 30,
+        "maximum": 3600
+      },
+      "scenes": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "scene_number": {
+              "type": "integer"
+            },
+            "duration": {
+              "type": "integer"
+            },
+            "setting": {
+              "type": "string"
+            },
+            "action": {
+              "type": "string"
+            },
+            "dialogue": {
+              "type": "string"
+            },
+            "visual_notes": {
+              "type": "string"
+            }
+          },
+          "required": ["scene_number", "duration", "setting", "action", "dialogue"]
+        }
+      },
+      "target_audience": {
+        "type": "object",
+        "properties": {
+          "age_range": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "interests": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "demographics": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "required": ["title", "target_duration", "scenes", "target_audience"]
+  },
+  "product_description": {
+    "id": "template_product_desc_v1",
+    "type": "product_description",
+    "structure": {
+      "product_name": {
+        "type": "string",
+        "maxLength": 100
+      },
+      "short_description": {
+        "type": "string",
+        "maxLength": 200
+      },
+      "long_description": {
+        "type": "string",
+        "maxLength": 2000
+      },
+      "features": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "benefit": {
+              "type": "string"
+            }
+          },
+          "required": ["title", "description", "benefit"]
+        }
+      },
+      "specifications": {
+        "type": "object",
+        "properties": {
+          "dimensions": {
+            "type": "object"
+          },
+          "weight": {
+            "type": "string"
+          },
+          "materials": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "technical_specs": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "required": ["product_name", "short_description", "long_description", "features", "specifications"]
+  },
+  "whitepaper": {
+    "id": "template_whitepaper_v1",
+    "type": "whitepaper",
+    "structure": {
+      "title": {
+        "type": "string",
+        "maxLength": 200
+      },
+      "executive_summary": {
+        "type": "string",
+        "maxLength": 1000
+      },
+      "sections": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "content": {
+              "type": "string"
+            }
+          },
+          "required": ["title", "content"]
+        }
+      },
+      "references": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "authors": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "publication": {
+              "type": "string"
+            }
+          },
+          "required": ["title", "authors"]
+        }
+      },
+      "metadata": {
+        "type": "object",
+        "properties": {
+          "published_date": {
+            "type": "string"
+          },
+          "industry": {
+            "type": "string"
+          },
+          "target_audience": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "required": ["title", "executive_summary", "sections", "references", "metadata"]
+  }
+}

@@ -1,0 +1,261 @@
+{
+    "business_info": {
+        "name": "Design Gaga",
+        "website": "www.designgaga.ca",
+        "phone": "4379878666",
+        "type": "home_staging",
+        "location": "Toronto",
+        "target_areas": [
+            "Toronto",
+            "North York",
+            "Scarborough",
+            "Etobicoke",
+            "Mississauga",
+            "Brampton",
+            "Vaughan",
+            "Richmond Hill",
+            "Markham"
+        ]
+    },
+    "target_audience": {
+        "primary": [
+            {
+                "type": "Real Estate Agents",
+                "description": "Active real estate agents with listings in luxury and mid-range properties",
+                "pain_points": [
+                    "Need to sell properties faster",
+                    "Want to achieve higher selling prices",
+                    "Looking for reliable staging partners",
+                    "Need professional photos for listings"
+                ]
+            },
+            {
+                "type": "Property Developers",
+                "description": "Developers with new residential projects or renovated properties",
+                "pain_points": [
+                    "Need model homes staged",
+                    "Want to attract premium buyers",
+                    "Need consistent staging partner",
+                    "Looking for modern design aesthetic"
+                ]
+            },
+            {
+                "type": "Home Sellers",
+                "description": "Individual homeowners planning to sell their properties",
+                "pain_points": [
+                    "Want best possible selling price",
+                    "Need to sell quickly",
+                    "Want property to stand out",
+                    "Unsure about staging investment"
+                ]
+            }
+        ],
+        "secondary": [
+            {
+                "type": "Interior Designers",
+                "description": "Local interior designers for potential partnerships",
+                "collaboration_opportunities": [
+                    "Joint projects",
+                    "Client referrals",
+                    "Co-marketing initiatives"
+                ]
+            },
+            {
+                "type": "Property Managers",
+                "description": "Managers of rental properties and apartment complexes",
+                "pain_points": [
+                    "Need to attract quality tenants",
+                    "Want to increase rental values",
+                    "Looking for quick turnaround"
+                ]
+            }
+        ]
+    },
+    "outreach_campaigns": {
+        "sms": {
+            "real_estate_agents": {
+                "initial_message": "Hi {{name}}, This is Design Gaga - Toronto's premium home staging service. We help agents sell properties 40% faster with our professional staging. Check our work: www.designgaga.ca/portfolio",
+                "follow_up": "Hi {{name}}, Following up on our staging services. We're offering a special 10% discount for first-time agent partnerships. Interested in learning more?",
+                "frequency": "weekly",
+                "best_times": ["10:00", "14:00"],
+                "max_follow_ups": 2
+            },
+            "property_developers": {
+                "initial_message": "Hi {{name}}, Design Gaga here - We specialize in model home staging that sells. Our staged properties sell for up to 15% more. View our projects: www.designgaga.ca/projects",
+                "follow_up": "Hi {{name}}, Quick follow-up about staging your model homes. We have special packages for developers. Would you like to discuss?",
+                "frequency": "weekly",
+                "best_times": ["11:00", "15:00"],
+                "max_follow_ups": 2
+            }
+        },
+        "email": {
+            "real_estate_agents": {
+                "subject_lines": [
+                    "Sell Properties Faster with Professional Staging",
+                    "Boost Your Listings' Appeal with Design Gaga",
+                    "Partner with Toronto's Premier Home Staging Service"
+                ],
+                "templates": {
+                    "introduction": {
+                        "subject": "Elevate Your Listings with Professional Home Staging",
+                        "body": "Hi {{name}},\n\nI noticed you're an active agent in the {{area}} market. I wanted to introduce Design Gaga, Toronto's premium home staging service.\n\nOur staged properties typically:\n• Sell 40% faster\n• Achieve 10-15% higher selling prices\n• Get more viewing requests\n• Stand out in listings with professional photos\n\nCheck out our recent projects: www.designgaga.ca/portfolio\n\nWould you be interested in discussing how we can help your listings stand out?\n\nBest regards,\nDesign Gaga Team\n437-987-8666",
+                        "frequency": "once"
+                    },
+                    "case_study": {
+                        "subject": "How We Helped Sell a {{area}} Property in Just 5 Days",
+                        "body": "Hi {{name}},\n\nI wanted to share a quick success story from {{area}}.\n\nWe recently staged a property that:\n• Was on the market for 45 days unstaged\n• Sold in 5 days after our staging\n• Received multiple offers\n• Sold for 12% above asking\n\nView the transformation: www.designgaga.ca/case-studies\n\nWe'd love to help you achieve similar results with your listings.\n\nBest regards,\nDesign Gaga Team\n437-987-8666",
+                        "frequency": "monthly"
+                    }
+                },
+                "follow_up_sequence": [
+                    {
+                        "delay_days": 3,
+                        "subject": "Quick follow-up: Home Staging Partnership",
+                        "body": "Hi {{name}},\n\nJust following up on my previous email about our home staging services. I'd love to discuss how we can help your listings stand out in the competitive {{area}} market.\n\nWould you be open to a quick call this week?\n\nBest regards,\nDesign Gaga Team\n437-987-8666"
+                    }
+                ]
+            }
+        },
+        "cold_calls": {
+            "real_estate_agents": {
+                "script": {
+                    "greeting": "Hi {{name}}, this is {{agent_name}} from Design Gaga. Did I catch you at a good time?",
+                    "pitch": "I noticed you're active in the {{area}} real estate market. We're a professional home staging company that helps agents sell properties faster and for better prices. Would you be interested in learning how we can help your listings stand out?",
+                    "value_props": [
+                        "Our staged properties typically sell 40% faster",
+                        "We help achieve 10-15% higher selling prices",
+                        "We offer professional photos with our staging",
+                        "We have a quick 48-hour turnaround time"
+                    ],
+                    "objection_handling": {
+                        "too_expensive": "I understand budget concerns. We actually have flexible packages, and our staging typically helps properties sell for much more than the staging investment.",
+                        "have_existing_stager": "That's great! We'd still love to be your backup option or help with overflow. We can also offer competitive rates for new partnerships.",
+                        "not_interested": "No problem! Would you like me to send you our portfolio and pricing guide for future reference?",
+                        "bad_timing": "I completely understand. When would be a better time to discuss how we can help your listings?"
+                    }
+                },
+                "call_times": ["10:00-12:00", "14:00-16:00"],
+                "max_attempts": 2,
+                "retry_delay_days": 7
+            }
+        },
+        "social_media": {
+            "instagram": {
+                "post_frequency": "daily",
+                "content_types": [
+                    {
+                        "type": "Before/After",
+                        "caption_template": "Swipe to see the transformation! 😍 Another stunning before and after by Design Gaga. This {{property_type}} in {{location}} sold within {{days}} days after staging!\n\n🏠 Location: {{location}}\n⭐ Result: Sold {{percentage}}% above asking\n⚡ Days on market: {{days}}\n\n#TorontoRealEstate #HomeStaging #InteriorDesign #DesignGaga #LuxuryHomes #TorontoHomes",
+                        "frequency": "3_per_week"
+                    },
+                    {
+                        "type": "Tips",
+                        "caption_template": "🏠 Home Staging Tip #{{number}}\n\n{{tip_title}}\n\n{{tip_description}}\n\nWant professional staging that sells? Call us at 437-987-8666\n\n#HomeStaging #RealEstateTips #TorontoRealEstate #DesignGaga #InteriorDesign",
+                        "frequency": "2_per_week"
+                    },
+                    {
+                        "type": "Team",
+                        "caption_template": "Meet our amazing team! 👋\n\nOur professional stagers bring years of experience and an eye for detail to every project.\n\n📞 Book a consultation: 437-987-8666\n🌐 www.designgaga.ca\n\n#DesignGaga #TorontoStaging #InteriorDesign #RealEstate",
+                        "frequency": "1_per_week"
+                    }
+                ],
+                "hashtags": [
+                    "#TorontoRealEstate",
+                    "#HomeStaging",
+                    "#InteriorDesign",
+                    "#DesignGaga",
+                    "#LuxuryHomes",
+                    "#TorontoHomes",
+                    "#StagingWorks",
+                    "#RealEstate",
+                    "#HomeSale",
+                    "#PropertyStyling"
+                ]
+            },
+            "linkedin": {
+                "post_frequency": "weekly",
+                "content_types": [
+                    {
+                        "type": "Case Study",
+                        "template": "🏠 Recent Success Story\n\nWe recently staged a {{property_type}} in {{location}} that achieved amazing results:\n\n📈 Sold {{percentage}}% above asking\n⚡ {{days}} days on market\n👥 {{viewings}} viewings in first week\n\nProfessional home staging works! See how we can help your listings stand out: www.designgaga.ca\n\n#RealEstate #HomeStaging #TorontoRealEstate",
+                        "frequency": "2_per_month"
+                    },
+                    {
+                        "type": "Market Insights",
+                        "template": "📊 Toronto Real Estate Insight\n\n{{insight_title}}\n\n{{insight_details}}\n\nLooking to maximize your property's value? Professional staging can help.\n\nLearn more: www.designgaga.ca\n\n#TorontoRealEstate #MarketInsights #HomeStaging",
+                        "frequency": "2_per_month"
+                    }
+                ]
+            }
+        }
+    },
+    "lead_scoring": {
+        "criteria": {
+            "property_type": {
+                "luxury": 5,
+                "mid_range": 4,
+                "starter": 3
+            },
+            "location": {
+                "prime": 5,
+                "suburban": 4,
+                "outskirts": 3
+            },
+            "response_rate": {
+                "high": 5,
+                "medium": 3,
+                "low": 1
+            },
+            "transaction_volume": {
+                "high": 5,
+                "medium": 3,
+                "low": 1
+            }
+        },
+        "minimum_score": 12
+    },
+    "automation_rules": {
+        "follow_up_timing": {
+            "email": {
+                "first": "3_days",
+                "second": "7_days",
+                "third": "14_days",
+                "max_attempts": 3
+            },
+            "sms": {
+                "first": "2_days",
+                "second": "5_days",
+                "max_attempts": 2
+            },
+            "call": {
+                "first": "4_days",
+                "second": "10_days",
+                "max_attempts": 2
+            }
+        },
+        "blackout_periods": {
+            "calls": {
+                "before": "09:00",
+                "after": "17:00",
+                "weekends": true
+            },
+            "sms": {
+                "before": "10:00",
+                "after": "16:00",
+                "weekends": true
+            }
+        },
+        "lead_nurturing": {
+            "warm_leads": {
+                "contact_frequency": "weekly",
+                "channels": ["email", "call"],
+                "content_type": "value_add"
+            },
+            "hot_leads": {
+                "contact_frequency": "twice_weekly",
+                "channels": ["call", "email", "sms"],
+                "content_type": "sales"
+            }
+        }
+    }
+}

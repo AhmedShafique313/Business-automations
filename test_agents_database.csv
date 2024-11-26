@@ -1,0 +1,3 @@
+name,brokerage,phone,location,description,instagram_handle,facebook_handle,linkedin_url,telegram_handle,source,date_found
+John Smith,Luxury Realty,555-0123,Toronto,Luxury real estate specialist,@johnsmith_luxury,johnsmithluxury,linkedin.com/in/johnsmith,@johnsmith,test_data,2024-11-25
+Jane Doe,Premium Properties,555-0124,Mississauga,High-end property expert,@janedoe_luxury,janedoeluxury,linkedin.com/in/janedoe,@janedoe,test_data,2024-11-25

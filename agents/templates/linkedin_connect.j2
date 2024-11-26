@@ -1,0 +1,13 @@
+Hi {{ lead.name }},
+
+I'm {{ agent.name }}, Lead Designer at Design Gaga. I noticed your interest in luxury home staging and wanted to connect. We specialize in transforming high-end properties through sophisticated design and staging.
+
+{% if lead.company %}
+I see you're at {{ lead.company.name }}. Would love to explore how we could add value to your luxury real estate portfolio.
+{% endif %}
+
+Looking forward to connecting!
+
+Best regards,
+{{ agent.name }}
+Design Gaga

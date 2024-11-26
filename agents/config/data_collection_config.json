@@ -1,0 +1,162 @@
+{
+    "data_sources": [
+        {
+            "name": "google_analytics",
+            "type": "google_analytics",
+            "credentials": {
+                "client_id": "${GOOGLE_CLIENT_ID}",
+                "client_secret": "${GOOGLE_CLIENT_SECRET}",
+                "refresh_token": "${GOOGLE_REFRESH_TOKEN}"
+            },
+            "endpoints": [],
+            "metrics": [
+                "pageviews",
+                "sessions",
+                "users",
+                "bounceRate",
+                "avgSessionDuration",
+                "goalCompletionsAll",
+                "goalConversionRateAll"
+            ],
+            "refresh_rate": "1h"
+        },
+        {
+            "name": "facebook_insights",
+            "type": "facebook",
+            "credentials": {
+                "access_token": "${FACEBOOK_ACCESS_TOKEN}"
+            },
+            "endpoints": [],
+            "metrics": [
+                "page_impressions",
+                "page_engaged_users",
+                "page_posts_impressions",
+                "page_actions_post_reactions_total"
+            ],
+            "refresh_rate": "1h"
+        },
+        {
+            "name": "instagram_insights",
+            "type": "instagram",
+            "credentials": {
+                "username": "${INSTAGRAM_USERNAME}",
+                "password": "${INSTAGRAM_PASSWORD}"
+            },
+            "endpoints": [],
+            "metrics": [
+                "followers",
+                "reach",
+                "impressions",
+                "profile_views"
+            ],
+            "refresh_rate": "6h"
+        },
+        {
+            "name": "linkedin_company",
+            "type": "linkedin",
+            "credentials": {
+                "username": "${LINKEDIN_USERNAME}",
+                "password": "${LINKEDIN_PASSWORD}"
+            },
+            "endpoints": [],
+            "metrics": [
+                "followers",
+                "unique_impressions",
+                "engagement_rate",
+                "click_through_rate"
+            ],
+            "refresh_rate": "6h"
+        },
+        {
+            "name": "mailchimp_campaigns",
+            "type": "mailchimp",
+            "credentials": {
+                "api_key": "${MAILCHIMP_API_KEY}"
+            },
+            "endpoints": [],
+            "metrics": [
+                "opens",
+                "clicks",
+                "subscribes",
+                "unsubscribes"
+            ],
+            "refresh_rate": "1d"
+        },
+        {
+            "name": "hubspot_crm",
+            "type": "hubspot",
+            "credentials": {
+                "api_key": "${HUBSPOT_API_KEY}"
+            },
+            "endpoints": [],
+            "metrics": [
+                "deals_created",
+                "deals_closed",
+                "pipeline_value",
+                "contacts_created"
+            ],
+            "refresh_rate": "1h"
+        },
+        {
+            "name": "custom_website_metrics",
+            "type": "custom",
+            "credentials": {},
+            "endpoints": [
+                "https://api.designgaga.com/metrics/website",
+                "https://api.designgaga.com/metrics/conversion",
+                "https://api.designgaga.com/metrics/engagement"
+            ],
+            "metrics": [
+                "form_submissions",
+                "chat_interactions",
+                "quote_requests",
+                "portfolio_views"
+            ],
+            "refresh_rate": "15m"
+        }
+    ],
+    "data_processing": {
+        "aggregation_intervals": ["1h", "1d", "7d", "30d"],
+        "storage_format": "parquet",
+        "compression": "snappy",
+        "retention_period": "365d"
+    },
+    "monitoring": {
+        "data_quality": {
+            "completeness_threshold": 0.95,
+            "freshness_threshold": "1h",
+            "consistency_checks": true,
+            "anomaly_detection": true
+        },
+        "alerts": {
+            "channels": ["email", "slack"],
+            "thresholds": {
+                "error_rate": 0.05,
+                "latency": "5m",
+                "missing_data": "1h"
+            }
+        }
+    },
+    "performance": {
+        "batch_size": 1000,
+        "max_concurrent_requests": 10,
+        "timeout": "30s",
+        "retry": {
+            "max_attempts": 3,
+            "backoff_factor": 2,
+            "initial_wait": "1s"
+        }
+    },
+    "security": {
+        "encryption": {
+            "at_rest": true,
+            "in_transit": true,
+            "key_rotation": "30d"
+        },
+        "access_control": {
+            "role_based": true,
+            "ip_whitelist": ["office_ip_range"],
+            "audit_logging": true
+        }
+    }
+}

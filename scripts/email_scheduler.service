@@ -1,0 +1,15 @@
+[Unit]
+Description=Design Gaga Email Sequence Scheduler
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/mnt/VANDAN_DISK/code_stuff/projects/experiments
+Environment=PYTHONPATH=/mnt/VANDAN_DISK/code_stuff/projects/experiments
+ExecStart=/usr/bin/python3 agents/scheduled_task_manager.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

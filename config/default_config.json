@@ -1,0 +1,86 @@
+{
+    "company": {
+        "name": "Design Gaga",
+        "website": "https://designgaga.com",
+        "phone": "",
+        "business_type": "design",
+        "location": "Toronto"
+    },
+    "api": {
+        "openai": {
+            "model": "gpt-4",
+            "temperature": 0.7,
+            "max_tokens": 1000,
+            "rate_limit": {
+                "calls_per_minute": 50
+            }
+        },
+        "asana": {
+            "workspace_gid": "",
+            "rate_limit": {
+                "calls_per_minute": 50
+            },
+            "retry": {
+                "max_attempts": 3,
+                "min_wait": 4,
+                "max_wait": 10
+            }
+        },
+        "twilio": {
+            "account_sid": "",
+            "auth_token": "",
+            "phone_number": ""
+        },
+        "google": {
+            "credentials_file": "credentials.json",
+            "token_file": "token.json",
+            "scopes": [
+                "https://www.googleapis.com/auth/business.manage",
+                "https://www.googleapis.com/auth/gmail.send"
+            ]
+        }
+    },
+    "features": {
+        "voice_commands": {
+            "enabled": false,
+            "language": "en-US",
+            "confidence_threshold": 0.8
+        },
+        "google_integration": {
+            "enabled": false,
+            "auto_post": true,
+            "post_frequency": "daily"
+        },
+        "web_automation": {
+            "enabled": false,
+            "headless": true,
+            "timeout": 30
+        },
+        "email_outreach": {
+            "enabled": true,
+            "max_daily": 50,
+            "delay_between": 300
+        }
+    },
+    "paths": {
+        "templates": "templates",
+        "logs": "logs",
+        "data": "data",
+        "credentials": "credentials"
+    },
+    "templates": {
+        "follow_up_email": "follow_up_email.txt",
+        "cold_call": "cold_call.txt",
+        "social_post": "social_post.txt"
+    },
+    "logging": {
+        "level": "INFO",
+        "format": "%(asctime)s %(name)s %(levelname)s %(message)s",
+        "handlers": ["file", "console"],
+        "file": {
+            "path": "logs/app.log",
+            "max_size": 10485760,
+            "backup_count": 5
+        }
+    }
+}

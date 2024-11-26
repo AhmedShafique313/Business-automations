@@ -1,0 +1,13 @@
+{
+    "asana": {
+        "client_id": "1208846301248797",
+        "client_secret": "6a3db59e33e37485363ec770fcbb4fe4",
+        "auth_url": "https://app.asana.com/-/oauth_authorize",
+        "token_url": "https://app.asana.com/-/oauth_token",
+        "redirect_uri": "http://localhost:8080/callback",
+        "access_token": "2/193001964165977/1208827516005566:203461ead889dcbd20a8eae64f88c5e0"
+    },
+    "serper": {
+        "api_key": "0b81106d9502cda4d502c95921feeeb80619fbb965c916a8c8def4e2537c1e1e"
+    }
+}

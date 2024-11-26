@@ -1,0 +1,79 @@
+{
+  "blog_post": {
+    "quality": {
+      "grammar": {"weight": 0.3, "threshold": 0.8},
+      "readability": {"weight": 0.3, "threshold": 0.7},
+      "originality": {"weight": 0.4, "threshold": 0.6}
+    },
+    "seo": {
+      "keyword_density": {"weight": 0.3, "threshold": 0.02},
+      "meta_description": {"weight": 0.3, "threshold": 0.9},
+      "heading_structure": {"weight": 0.4, "threshold": 0.8}
+    },
+    "compliance": {
+      "plagiarism": {"weight": 0.4, "threshold": 0.1},
+      "brand_guidelines": {"weight": 0.3, "threshold": 0.9},
+      "legal_requirements": {"weight": 0.3, "threshold": 1.0}
+    }
+  },
+  "social_post": {
+    "quality": {
+      "grammar": {"weight": 0.3, "threshold": 0.8},
+      "engagement_potential": {"weight": 0.4, "threshold": 0.7},
+      "hashtag_relevance": {"weight": 0.3, "threshold": 0.6}
+    },
+    "compliance": {
+      "brand_voice": {"weight": 0.4, "threshold": 0.8},
+      "platform_guidelines": {"weight": 0.3, "threshold": 1.0},
+      "sensitive_content": {"weight": 0.3, "threshold": 0.9}
+    }
+  },
+  "email_campaign": {
+    "quality": {
+      "subject_line": {"weight": 0.4, "threshold": 0.8},
+      "content_quality": {"weight": 0.3, "threshold": 0.7},
+      "call_to_action": {"weight": 0.3, "threshold": 0.8}
+    },
+    "compliance": {
+      "spam_score": {"weight": 0.4, "threshold": 0.1},
+      "gdpr_compliance": {"weight": 0.3, "threshold": 1.0},
+      "unsubscribe_mechanism": {"weight": 0.3, "threshold": 1.0}
+    }
+  },
+  "video_script": {
+    "quality": {
+      "script_structure": {"weight": 0.3, "threshold": 0.8},
+      "engagement_hooks": {"weight": 0.4, "threshold": 0.7},
+      "pacing": {"weight": 0.3, "threshold": 0.7}
+    },
+    "compliance": {
+      "content_guidelines": {"weight": 0.4, "threshold": 0.9},
+      "platform_requirements": {"weight": 0.3, "threshold": 1.0},
+      "copyright_clearance": {"weight": 0.3, "threshold": 1.0}
+    }
+  },
+  "product_description": {
+    "quality": {
+      "clarity": {"weight": 0.3, "threshold": 0.8},
+      "value_proposition": {"weight": 0.4, "threshold": 0.8},
+      "technical_accuracy": {"weight": 0.3, "threshold": 0.9}
+    },
+    "compliance": {
+      "regulatory_compliance": {"weight": 0.4, "threshold": 1.0},
+      "pricing_accuracy": {"weight": 0.3, "threshold": 1.0},
+      "claims_verification": {"weight": 0.3, "threshold": 0.9}
+    }
+  },
+  "whitepaper": {
+    "quality": {
+      "research_depth": {"weight": 0.4, "threshold": 0.8},
+      "technical_accuracy": {"weight": 0.3, "threshold": 0.9},
+      "readability": {"weight": 0.3, "threshold": 0.7}
+    },
+    "compliance": {
+      "citation_accuracy": {"weight": 0.4, "threshold": 0.9},
+      "data_privacy": {"weight": 0.3, "threshold": 1.0},
+      "intellectual_property": {"weight": 0.3, "threshold": 1.0}
+    }
+  }
+}

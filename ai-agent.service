@@ -1,0 +1,15 @@
+[Unit]
+Description=AI Agent Service
+After=network.target
+
+[Service]
+Type=simple
+User=vandan
+Environment=PYTHONPATH=/mnt/VANDAN_DISK/code_stuff/projects/experiments
+WorkingDirectory=/mnt/VANDAN_DISK/code_stuff/projects/experiments
+ExecStart=/usr/bin/python3 /mnt/VANDAN_DISK/code_stuff/projects/experiments/ai_agent.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

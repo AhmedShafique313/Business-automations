@@ -1,0 +1,23 @@
+Hello {{ lead.name }}! 👋
+
+{{ custom_intro }}
+
+{% if lead.score >= 80 %}
+I'd love to show you how we can transform your space into something extraordinary ✨
+
+Here's a recent project that matches your interests in {{ lead.interests[0] }}: {{ recent_project.url }}
+
+Would you be interested in a quick chat this week? 📞
+{% else %}
+{{ main_content }}
+
+Check out our latest work: {{ portfolio_link }} 🏠
+{% endif %}
+
+Best regards,
+{{ sender.name }}
+Design Gaga 🎨
+
+{% if lead.preferences.language == 'es' %}
+Para continuar en español, responda con "ES" 🇪🇸
+{% endif %}

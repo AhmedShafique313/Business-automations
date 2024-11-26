@@ -1,0 +1,23 @@
+Hi {{ lead.name }},
+
+I hope this message finds you well! I noticed you recently explored our luxury staging portfolio. I wanted to share some of our latest projects that might align with your vision:
+
+{% for project in recent_projects[:2] %}
+🏠 *{{ project.name }}*
+• Style: {{ project.style }}
+• Location: {{ project.location }}
+• Sold in: {{ project.sale_time }} days
+{{ project.highlight_url }}
+
+{% endfor %}
+
+Would you like to see how we could transform your space? I'd be happy to schedule a quick call to discuss your specific needs.
+
+*Quick Links:*
+📸 Full Portfolio: {{ portfolio_link }}
+📅 Book a Call: {{ booking_link }}
+✨ Latest Project: {{ featured_project_link }}
+
+Best regards,
+{{ agent.name }}
+Design Gaga | Luxury Home Staging

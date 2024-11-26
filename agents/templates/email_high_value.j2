@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
+    <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
+        <div style="text-align: center; margin-bottom: 30px;">
+            <img src="{{ brand_assets.logo }}" alt="Design Gaga" style="max-width: 200px;">
+        </div>
+
+        <p>Dear {{ lead.name }},</p>
+
+        {{ custom_intro }}
+
+        {% if lead.interests %}
+        <p>I noticed your interest in {{ lead.interests|join(' and ') }}. We recently completed a project that I believe would resonate with your vision:</p>
+        
+        <div style="margin: 20px 0;">
+            <img src="{{ recent_project.image }}" alt="Recent Project" style="width: 100%; max-width: 500px;">
+            <p style="font-style: italic;">{{ recent_project.description }}</p>
+        </div>
+        {% endif %}
+
+        {{ main_content }}
+
+        {% if lead.score >= 80 %}
+        <p>I'd love to schedule a personal consultation to discuss how we can transform your space. Would you be available for a brief call this week?</p>
+        
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="{{ calendar_link }}" style="background-color: #9c8b7a; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px;">Schedule Consultation</a>
+        </div>
+        {% endif %}
+
+        <p>Best regards,<br>
+        {{ sender.name }}<br>
+        Design Gaga<br>
+        <small>Luxury Home Staging & Interior Design</small></p>
+
+        <div style="margin-top: 40px; border-top: 1px solid #ddd; padding-top: 20px; font-size: 12px; color: #666;">
+            <p>Follow us on: 
+                <a href="{{ social.instagram }}" style="color: #9c8b7a;">Instagram</a> | 
+                <a href="{{ social.pinterest }}" style="color: #9c8b7a;">Pinterest</a>
+            </p>
+            <p>View our <a href="{{ portfolio_link }}" style="color: #9c8b7a;">Portfolio</a></p>
+        </div>
+    </div>
+</body>
+</html>

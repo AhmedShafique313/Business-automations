@@ -1,0 +1,106 @@
+{
+    "analytical_investor": {
+        "name": "Analytical Investor Sequence",
+        "description": "Sequence for data-driven, analytical investors",
+        "profile_match": {
+            "personality_traits": ["analytical", "detail-oriented", "logical"],
+            "communication_preferences": ["formal", "data-driven"],
+            "interests": ["investment analysis", "market research", "statistics"]
+        },
+        "steps": [
+            {
+                "delay_hours": 0,
+                "subject": {
+                    "variants": [
+                        "Data-Driven Real Estate Investment Analysis for {{location}}",
+                        "Comprehensive Market Analysis: {{location}} Real Estate Metrics"
+                    ]
+                },
+                "content": {
+                    "variants": [
+                        "Dear {{name}},\n\nBased on our comprehensive market analysis of {{location}}, here are the key metrics:\n\n📊 Market Statistics:\n- Average ROI: {{roi}}%\n- Price/sqft: ${{price_sqft}}\n- YoY Growth: {{yoy_growth}}%\n\n📈 Investment Potential:\n{{investment_analysis}}\n\n🔍 Would you like to review detailed property performance data?\n\nBest regards,\nYour Real Estate Team",
+                        "Dear {{name}},\n\nI've analyzed the {{location}} market and compiled these insights:\n\n📊 Key Metrics:\n- Cap Rate: {{cap_rate}}%\n- Cash Flow: ${{cash_flow}}/month\n- Appreciation: {{appreciation}}%\n\n📈 Market Trends:\n{{market_trends}}\n\n🔍 Shall we discuss these metrics in detail?\n\nBest regards,\nYour Real Estate Team"
+                    ]
+                }
+            }
+        ]
+    },
+    "relationship_focused": {
+        "name": "Relationship-Focused Sequence",
+        "description": "Sequence for emotionally-driven, relationship-oriented investors",
+        "profile_match": {
+            "personality_traits": ["empathetic", "relationship-oriented", "intuitive"],
+            "communication_preferences": ["personal", "story-based"],
+            "interests": ["community", "lifestyle", "family"]
+        },
+        "steps": [
+            {
+                "delay_hours": 0,
+                "subject": {
+                    "variants": [
+                        "Your Dream Home Journey in {{location}} 🏠",
+                        "Creating Memories in {{location}}: Your Perfect Home Awaits"
+                    ]
+                },
+                "content": {
+                    "variants": [
+                        "Hi {{name}},\n\nI noticed your interest in {{location}} - it's such a wonderful community! Let me share why families love it here:\n\n❤️ Community Highlights:\n- {{community_features}}\n- {{lifestyle_amenities}}\n\n🌟 Success Story:\n{{success_story}}\n\nWould you like to explore this amazing neighborhood together?\n\nWarmly,\nYour Real Estate Team",
+                        "Dear {{name}},\n\nThe {{location}} community is special, and I think you'll love it here! Here's why:\n\n🏡 Lifestyle Features:\n{{lifestyle_features}}\n\n👨‍👩‍👧‍👦 Family Activities:\n{{family_activities}}\n\n💝 Recent Homeowner Story:\n{{homeowner_story}}\n\nLet's find your perfect home in this wonderful community!\n\nWarmly,\nYour Real Estate Team"
+                    ]
+                }
+            }
+        ]
+    },
+    "busy_professional": {
+        "name": "Busy Professional Sequence",
+        "description": "Sequence for time-constrained, efficiency-focused professionals",
+        "profile_match": {
+            "personality_traits": ["efficient", "direct", "busy"],
+            "communication_preferences": ["concise", "action-oriented"],
+            "interests": ["time-saving", "convenience", "luxury"]
+        },
+        "steps": [
+            {
+                "delay_hours": 0,
+                "subject": {
+                    "variants": [
+                        "Quick Update: {{property_type}} Investment Opportunity",
+                        "Time-Sensitive: Premium {{property_type}} Available"
+                    ]
+                },
+                "content": {
+                    "variants": [
+                        "{{name}},\n\nQuick update on a premium opportunity:\n\n🏢 Property: {{property_details}}\n💰 ROI: {{roi}}%\n⏱️ Time to close: {{closing_time}}\n\nInterested? Reply 'Yes' for immediate viewing arrangements.\n\nBest,\nYour Real Estate Team",
+                        "{{name}},\n\nExclusive opportunity alert:\n\n✨ {{property_type}}\n📍 Prime location\n💎 Expected ROI: {{roi}}%\n\nShall I reserve a viewing slot for you?\n\nBest,\nYour Real Estate Team"
+                    ]
+                }
+            }
+        ]
+    },
+    "tech_savvy_investor": {
+        "name": "Tech-Savvy Investor Sequence",
+        "description": "Sequence for technology-oriented, innovation-focused investors",
+        "profile_match": {
+            "personality_traits": ["innovative", "tech-savvy", "forward-thinking"],
+            "communication_preferences": ["digital", "modern"],
+            "interests": ["technology", "innovation", "smart homes"]
+        },
+        "steps": [
+            {
+                "delay_hours": 0,
+                "subject": {
+                    "variants": [
+                        "Smart Investment: Tech-Enabled {{property_type}} in {{location}}",
+                        "Future-Ready: Smart Home Investment Opportunity"
+                    ]
+                },
+                "content": {
+                    "variants": [
+                        "Hi {{name}},\n\nFound a property that matches your tech preferences:\n\n🏠 Smart Features:\n{{smart_features}}\n\n🔧 Tech Specs:\n{{tech_specs}}\n\n📱 Virtual Tour: {{virtual_tour_link}}\n\nWant to explore this smart investment?\n\nBest,\nYour Real Estate Team",
+                        "Hey {{name}},\n\nExciting smart property alert!\n\n🤖 Smart Home Features:\n{{smart_features}}\n\n🔌 IoT Integration:\n{{iot_features}}\n\n🎥 Interactive 3D Tour: {{3d_tour_link}}\n\nReady to see the future of real estate?\n\nBest,\nYour Real Estate Team"
+                    ]
+                }
+            }
+        ]
+    }
+}
